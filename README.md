@@ -23,7 +23,7 @@ https://www.bricco.se/goop.json
 Lista alla unika banor sorterade i bokstavsordning.
 
 ### Fråga 2
-Hur många lopp har körts med Auto-start?
+Hur många lopp har körts med Autostart?
 
 ### Fråga 3
 Du spelar 100kr vinnarspel på Björn Goops alla lopp 2019.  
