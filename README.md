@@ -9,7 +9,7 @@ Bara det går att presentera och håll det gärna enkelt utan ramverk och för m
 * Tidsåtgång: lägg max 2h sammanlagt på uppgifterna.
 
 ## Provet
-Här är travkusken Björn Goops 2000 senaste starter (2020-02-12).
+`goop.json` innehåller travkusken Björn Goops 2000 senaste starter (2020-02-12).
 https://www.bricco.se/goop.json 
 
 * `place` = Placering i loppet. 0 = diskad/brutit. 
