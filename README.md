@@ -1,7 +1,7 @@
 # Bricco's kodprov
 
-Programeringsspråk, ramverk, miljö är helt fritt att välja.
-Bara det går att presentera.
+Programeringsspråk är helt fritt fram att välja.
+Bara det går att presentera och håll det gärna enkelt utan ramverk och för många dependecies.
 
 * Tidsåtgång max 2h.
 * Ställ så många frågor som det behövs! Ingen fråga är för dum.
@@ -26,7 +26,7 @@ Hur många lopp har körts med Auto-start?
 
 ### Fråga 3
 Du spelar 100kr vinnarspel på Björn Goops alla lopp 2019.
-Hur mycket pengar tjänar du på ditt spelande?
+Hur mycket pengar har du tjänat på ditt spelande?
 
 ### Fråga 4
 Gör en lista med alla banor, sorterade på Björns Goops segerprocent 2019.
