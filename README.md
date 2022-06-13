@@ -15,7 +15,7 @@ https://www.bricco.se/goop.json
 * `place` = Placering i loppet. 0 = diskad/brutit. 
 * `odds` = Vinnarodds angivet i hundradelar.
 * `track` = Travbana. 
-* `startTime` = Datum och tid när loppet startade (iso ). 
+* `startTime` = Datum och tid när loppet startade. 
 * `firstPrize` = Prispengar till vinnaren i det aktuella loppet. 
 * `startMethod` = Startmetod (A = Autostart, V = Voltstart). 
 
