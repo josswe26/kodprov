@@ -1,6 +1,6 @@
 # Bricco's kodprov
 
-Programeringsspråk är helt fritt fram att välja.
+Programmeringsspråk är helt fritt fram att välja.
 Bara det går att presentera och håll det gärna enkelt utan ramverk och för många dependecies.
 
 * Ställ så många frågor som det behövs! Ingen fråga är för dum.
