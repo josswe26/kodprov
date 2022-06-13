@@ -3,10 +3,10 @@
 Programeringsspråk är helt fritt fram att välja.
 Bara det går att presentera och håll det gärna enkelt utan ramverk och för många dependecies.
 
-* Tidsåtgång max 2h.
 * Ställ så många frågor som det behövs! Ingen fråga är för dum.
 * Tänk som om det vore en arbetsuppgift din första vecka hos oss, både vad gäller kommunikation och leverans.
 * Läs mer om odds och spel på vinnare här: https://www.atg.se/vinnare/om-vinnare. 
+* Tidsåtgång: lägg max 2h sammanlagt på uppgifterna.
 
 ## Provet
 Här är travkusken Björn Goops 2000 senaste starter (2020-02-12).
