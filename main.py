@@ -1,5 +1,6 @@
 import json
 import datetime as dt
+from collections import Counter
 
 
 def list_sorted_tracks(driver_data):
@@ -43,6 +44,29 @@ def calcutale_bets(driver_data):
     return total_winnings
 
 
+def list_tracks_by_victory_percentage(driver_data):
+
+    tracks_by_victory_percentage = {}
+
+    races_per_track = dict(Counter(start["track"] for start in driver_data))
+    victories_per_track = dict(Counter(start["track"]
+                               for start in driver_data
+                               if start["place"] == 1))
+
+    for track in races_per_track:
+        if track in victories_per_track:
+            tracks_by_victory_percentage[track] = float("{:.2f}".format(
+                victories_per_track[track] / races_per_track[track] * 100))
+        else:
+            tracks_by_victory_percentage[track] = 0
+
+    tracks_by_victory_percentage = sorted(
+        tracks_by_victory_percentage.items(),
+        key=lambda x: x[1], reverse=True)
+
+    return tracks_by_victory_percentage
+
+
 with open("goop.json") as file:
     goop_data = json.load(file)
 
@@ -55,5 +79,10 @@ print("\n***** Fråga 2 *****")
 print(f"\nDet kördes {start_method_counter(goop_data, 'A')} med Autostart.")
 
 print("\n***** Fråga 3 *****")
-print(f"Om man spelar 100kr på Björn Goops alla lopp 2019, \
-blir det en förlust på {int(-(calcutale_bets(goop_data)))}kr.")
+print(f"\nOm man spelar 100kr på Björn Goops alla lopp 2019, "
+      f"blir det en förlust på {int(-(calcutale_bets(goop_data)))}kr.")
+
+print("\n***** Fråga 4 *****")
+print("\nLista av Björn Goops segerprocent per bana 2019:")
+for track in list_tracks_by_victory_percentage(goop_data):
+    print(f"-  {track[0]}: {track[1]} %")
