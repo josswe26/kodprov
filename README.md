@@ -32,4 +32,4 @@ Hur mycket pengar har du tjänat på ditt spelande?
 Gör en lista med alla banor, sorterade på Björns Goops segerprocent 2019.
 
 ### Fråga 5
-Hur mycket prispengar sprang Björn Goop in på Solvalla under Q4 2019?
+Hur mycket prispengar körde Björn Goop in på Solvalla under Q4 2019?
