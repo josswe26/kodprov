@@ -38,6 +38,8 @@ def calculate_bets(driver_data):
             stake += 100
             if race_start["place"] == 1:
                 winnings += 100 * (race_start["odds"]/100)
+            elif race_start["place"] == 0:
+                winnings += 100
 
     total_winnings = winnings - stake
 
@@ -52,7 +54,8 @@ def list_tracks_by_victory_percentage(driver_data):
     tracks_by_victory_percentage = {}
 
     races_per_track = dict(Counter(race_start["track"]
-                           for race_start in driver_data))
+                           for race_start in driver_data 
+                           if race_start["place"] != 0))
 
     victories_per_track = dict(Counter(race_start["track"]
                                for race_start in driver_data
@@ -104,7 +107,7 @@ print(f"\nOm man spelar 100kr på Björn Goops alla lopp 2019, "
       f"blir det en förlust på {int(-(calculate_bets(goop_data)))}kr.")
 
 print("\n***** Fråga 4 *****")
-print("\nLista av Björn Goops segerprocent per bana 2019:")
+print("\nLista av Björn Goops segerprocent per bana 2019:\n")
 for track in list_tracks_by_victory_percentage(goop_data):
     print(f"-  {track[0]}: {track[1]} %")
 
